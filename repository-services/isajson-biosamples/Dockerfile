@@ -6,7 +6,7 @@ WORKDIR /app
 COPY . .
 
 WORKDIR /app/receipt
-RUN ./gradlew build
+RUN ls && ./gradlew build
 RUN ./gradlew publishToMavenLocal
 
 WORKDIR /app/isajson-biosamples
