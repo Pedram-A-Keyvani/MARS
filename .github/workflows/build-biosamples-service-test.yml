@@ -2,13 +2,6 @@ name: Test on Building and Pushing Docker image for BioSamples service
 
 on:
   push:
-    paths:
-        - "repository-services/isajson-biosamples/**"
-  pull_request:
-    paths:
-        - "repository-services/isajson-biosamples/**"
-    branches:
-      - mars-receipt-library
 
 jobs:
   build:
