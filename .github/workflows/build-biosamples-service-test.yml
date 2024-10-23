@@ -20,8 +20,8 @@ jobs:
       - name: Build Docker image
         uses: docker/build-push-action@v6
         with:
-          context: .
-          file: repository-services/isajson-biosamples/Dockerfile
+          context: repository-services/
+          file: isajson-biosamples/Dockerfile
           push: false
           tags: user/app:latest
           build-args: |
